@@ -7,8 +7,30 @@
 //
 
 #import <UIKit/UIKit.h>
-
+int number;
+NSMutableArray *bingoArray;
 @interface ViewController : UIViewController
+{
+//    int number;
+    IBOutlet UIButton *push;
+    IBOutlet UILabel *label;
+    IBOutlet UITextView *problemNumber;
+  
+//
+   
+    //表示した数字の記録
+    int pastNumber;
+    int sumCount;
+    
+    
+//    int _pastNumber;
+//    int _sumCount;
+    
+}
+
+-(IBAction)push;
+@property (nonatomic) int pastNumber;
+@property (nonatomic) int sumCount;
 
 
 @end
